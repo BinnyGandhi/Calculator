@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <!--Include custom css-->
+    <link rel="stylesheet" href="index.css">
+
+    <!--Include custom js-->
+    <script src="index.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2 col-sm-3 col-lg-4"></div>
+        <div class="col-xs-8 col-sm-6 col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Electronic calculator</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-responsive">
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-block" onclick="clearScreen()">C
+                                </button>
+                            </td>
+                            <td colspan="3" width="90px">
+                                <label class="sr-only" for="displayInput">Input</label>
+                                <input type="text" class="form-control" id="displayInput" autofocus>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">7
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">8
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">9
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">+
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">4
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">5
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">6
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">-
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">1
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">2
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">3
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">/
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">0
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="calculateResult()">=
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">%
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">*
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2 col-sm-3 col-lg-4"></div>
+    </div>
+</div>
+
+
+</body>
+</html>
