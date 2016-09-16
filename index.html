@@ -40,12 +40,31 @@
                     <table class="table table-responsive">
                         <tr>
                             <td>
-                                <button type="button" class="btn btn-danger btn-block" onclick="clearScreen()">C
+                                <button type="button" class="btn btn-danger btn-block" onclick="clearScreen()">AC
                                 </button>
                             </td>
                             <td colspan="3" width="90px">
                                 <label class="sr-only" for="displayInput">Input</label>
                                 <input type="text" class="form-control" id="displayInput" autofocus>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)"
+                                        disabled>C
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">*
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">/
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-block" onclick="calculateResult()">=
+                                </button>
                             </td>
                         </tr>
                         <tr>
@@ -62,7 +81,7 @@
                                 </button>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">+
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">%
                                 </button>
                             </td>
                         </tr>
@@ -80,7 +99,7 @@
                                 </button>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">-
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">+
                                 </button>
                             </td>
                         </tr>
@@ -98,28 +117,19 @@
                                 </button>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">/
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">-
                                 </button>
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td colspan="3">
                                 <button type="button" class="btn btn-default btn-block" onclick="display(this)">0
                                 </button>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-default btn-block" onclick="calculateResult()">=
+                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">.
                                 </button>
                             </td>
-                            <td>
-                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">%
-                                </button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-default btn-block" onclick="display(this)">*
-                                </button>
-                            </td>
-                        </tr>
                     </table>
                 </div>
             </div>
