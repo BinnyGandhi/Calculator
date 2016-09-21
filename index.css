@@ -3,5 +3,34 @@ body {
 }
 
 .container {
-    padding-top: 6%;
+    padding-top: 5%;
+}
+
+.panel-body > .row {
+    padding-top: 10px;
+}
+
+#enterInput {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #000;
+    height: 40px;
+    border-radius: 5px;
+    border: #ccc 2px solid;
+}
+
+#displayInput {
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: #E0E0E0;
+    color: #000;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: 600;
 }
